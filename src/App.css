@@ -1,0 +1,96 @@
+#root, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+.table-game {
+  margin: 10px auto;
+  padding: 15px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+.buttons {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 90px;
+  padding: 10px 5px;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px -1px #fff;
+  transition: all 250ms ease-in-out;
+}
+
+button:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.request {
+  background-color: #2196f3;
+}
+
+.not-request {
+  background-color: #ff0534;
+}
+
+.two-back {
+  background-color: #c501e2;
+}
+
+.container-result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-shadow: 0 0 15px #ffff94;
+  font-size: 6em;
+  background-color: rgba(11, 13, 11, .45);
+}
+
+.view {
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .table-game {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .table-game {
+    width: 300px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+}
+
